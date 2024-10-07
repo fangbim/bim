@@ -116,6 +116,11 @@ export const DATA = {
           href: "https://github.com/fangbim/learn_hiragana_app",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Source (API)",
+          href: "https://github.com/fangbim/kosakata-hiragana-api",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "",
       video:
