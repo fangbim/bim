@@ -128,7 +128,7 @@ export const DATA = {
     },
     {
       title: "MosqueKu",
-      href: "https://mosqueku.vercel.app",
+      href: "https://mosquehub.vercel.app/",
       dates: "Jan 2023 - Present",
       active: true,
       description:
@@ -142,12 +142,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://mosqueku.vercel.app",
+          href: "https://mosquehub.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/fangbim/mosqueku",
+          href: "https://github.com/fangbim/mosquehub",
           icon: <Icons.github className="size-3" />,
         },
       ],
