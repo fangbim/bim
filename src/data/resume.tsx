@@ -127,12 +127,12 @@ export const DATA = {
         "https://ckfbdnekepdbtwtbbalm.supabase.co/storage/v1/object/sign/portfolio/video-project/hiraganaApp.mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8vdmlkZW8tcHJvamVjdC9oaXJhZ2FuYUFwcC5tcDQiLCJpYXQiOjE3Mjc4NTIzMTgsImV4cCI6MTc1OTM4ODMxOH0.AHsCzpAF41YBpYyRG_jSZcs8prN3RTkGfcVthxB913I&t=2024-10-02T06%3A58%3A38.428Z",
     },
     {
-      title: "MosqueKu",
+      title: "MosqueHub",
       href: "https://mosquehub.vercel.app/",
-      dates: "Jan 2023 - Present",
+      dates: "Present",
       active: true,
       description:
-        "Mosque Ku is a comprehensive web platform designed to serve as a one-stop resource for Muslims seeking prayer schedules, daily supplications, dhikr, and Islamic learning materials. The platform also features a community section for charitable contributions, encouraging a sense of togetherness and sharing.",
+        "Mosque Hub is a comprehensive web platform designed to serve as a one-stop resource for Muslims seeking prayer schedules, daily supplications, dhikr, and Islamic learning materials. The platform also features a community section for charitable contributions, encouraging a sense of togetherness and sharing.",
       technologies: [
         "Next.js",
         "Typescript",
