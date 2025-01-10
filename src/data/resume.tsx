@@ -57,7 +57,7 @@ export const DATA = {
       },
       Youtube: {
         name: "Youtube",
-        url: "https://www.youtube.com/@bim126",
+        url: "https://www.youtube.com/@fajaranggitoabimanyu870",
         icon: Icons.youtube,
         navbar: true,
       },
