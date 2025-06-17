@@ -57,7 +57,7 @@ export const DATA = {
       },
       Youtube: {
         name: "Youtube",
-        url: "https://www.youtube.com/@bim126",
+        url: "https://www.youtube.com/@fajaranggitoabimanyu870",
         icon: Icons.youtube,
         navbar: true,
       },
@@ -127,12 +127,12 @@ export const DATA = {
         "/project/hiraganaApp.mp4",
     },
     {
-      title: "MosqueKu",
+      title: "MosqueHub",
       href: "https://mosquehub.vercel.app/",
-      dates: "Jan 2023 - Present",
+      dates: "Present",
       active: true,
       description:
-        "Mosque Ku is a comprehensive web platform designed to serve as a one-stop resource for Muslims seeking prayer schedules, daily supplications, dhikr, and Islamic learning materials. The platform also features a community section for charitable contributions, encouraging a sense of togetherness and sharing.",
+        "Mosque Hub is a comprehensive web platform designed to serve as a one-stop resource for Muslims seeking prayer schedules, daily supplications, dhikr, and Islamic learning materials. The platform also features a community section for charitable contributions, encouraging a sense of togetherness and sharing.",
       technologies: [
         "Next.js",
         "Typescript",
