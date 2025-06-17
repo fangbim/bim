@@ -124,7 +124,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "https://ckfbdnekepdbtwtbbalm.supabase.co/storage/v1/object/sign/portfolio/video-project/hiraganaApp.mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8vdmlkZW8tcHJvamVjdC9oaXJhZ2FuYUFwcC5tcDQiLCJpYXQiOjE3Mjc4NTIzMTgsImV4cCI6MTc1OTM4ODMxOH0.AHsCzpAF41YBpYyRG_jSZcs8prN3RTkGfcVthxB913I&t=2024-10-02T06%3A58%3A38.428Z",
+        "/project/hiraganaApp.mp4",
     },
     {
       title: "MosqueKu",
@@ -152,7 +152,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://ckfbdnekepdbtwtbbalm.supabase.co/storage/v1/object/sign/portfolio/video-project/mosquekuWebsite.mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8vdmlkZW8tcHJvamVjdC9tb3NxdWVrdVdlYnNpdGUubXA0IiwiaWF0IjoxNzI4MDMxNzMzLCJleHAiOjE3NTk1Njc3MzN9.WPyqrCLunv0J6xDtigD6n0d3xXUHSzR3T-6HFoiH5Wc&t=2024-10-04T08%3A48%3A53.694Z",
+      video: "/project/mosquehub.mp4",
     }
   ],
   hackathons: [
