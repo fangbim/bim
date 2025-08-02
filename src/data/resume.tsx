@@ -18,6 +18,9 @@ export const DATA = {
     "Javascript",
     "Typescript",
     "Node.js",
+    ".NET",
+    "Java",
+    "Laravel",
     "Python",
     "Postgres",
     "SQL",
@@ -97,6 +100,33 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "WBook",
+      href: "https://wbook.vercel.app/",
+      dates: "Jun 2025 - Jul 2025",
+      active: true,
+      description:
+        "WBook is a personal digital bookshelf application that allows users to manage their book collection easily. It features interactive Flashcards to help users memorize key points from books, and a Quote feature to save and revisit favorite passages. Built with Next.js and Supabase, it offers real-time data handling, user authentication, and a smooth, responsive experience.",
+      technologies: [
+        "Next.js",
+        "Supabase",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://wbook.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/fangbim/wbook",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "/project/wbook.mp4",
+    },
+    {
       title: "Hiragana Learning App (Final Year Project)",
       href: "https://github.com/fangbim/learn_hiragana_app",
       dates: "Feb 2024 - Jul 2024",
@@ -129,7 +159,7 @@ export const DATA = {
     {
       title: "MosqueHub",
       href: "https://mosquehub.vercel.app/",
-      dates: "Present",
+      dates: "Dec 2024 - Jan 2025",
       active: true,
       description:
         "Mosque Hub is a comprehensive web platform designed to serve as a one-stop resource for Muslims seeking prayer schedules, daily supplications, dhikr, and Islamic learning materials. The platform also features a community section for charitable contributions, encouraging a sense of togetherness and sharing.",
