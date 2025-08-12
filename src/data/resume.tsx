@@ -7,25 +7,35 @@ export const DATA = {
   url: "https://fangbim.vercel.app",
   location: "Lamongan, Indonesia",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description:
-    "Software Engineer.",
+  description: "Software Engineer.",
   summary:
     "Informatics graduate with a strong focus on web development. Skilled in creating responsive, user-friendly websites using both front-end and back-end technologies. Passionate about optimizing performance and enhancing user experience. Ready to apply technical skills and creativity to drive successful web projects.",
   avatarUrl: "/me.JPG",
   skills: [
+    // Frontend
     "React",
     "Next.js",
     "Javascript",
     "Typescript",
+    "Flutter",
+    "Figma",
+
+    // Backend
     "Node.js",
     ".NET",
-    "Java",
     "Laravel",
+    "PHP",
+    "Java",
     "Python",
+
+    // Database
     "Postgres",
     "SQL",
+
+    // Machine Learning / AI
     "Tensorflow",
-    "Flutter",
+
+    // Tools & OS
     "Git",
     "Linux",
   ],
@@ -96,9 +106,27 @@ export const DATA = {
       logoUrl: "/uisi.jpg",
       start: "2020",
       end: "2024",
-    }
+    },
   ],
   projects: [
+    {
+      title: "Auto Invoice",
+      href: "https://github.com/fangbim/autoinvoice",
+      dates: "Aug 2025",
+      active: true,
+      description:
+        "AutoInvoice is a customer management and automated invoicing application built with Laravel. It allows users to add customer data, generate PDF invoices, and send them via email either manually or automatically on a monthly schedule. Leveraging Job Queues and Redis, the system processes invoice sending in the background for improved performance and efficiency. The built-in Scheduler ensures invoices are delivered on time without manual intervention.",
+      technologies: ["Laravel", "Redis", "Mailtrap", "DOMPDF"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/fangbim/autoinvoice",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/project/autoinvoice.mp4",
+    },
     {
       title: "WBook",
       href: "https://wbook.vercel.app/",
@@ -106,10 +134,7 @@ export const DATA = {
       active: true,
       description:
         "WBook is a personal digital bookshelf application that allows users to manage their book collection easily. It features interactive Flashcards to help users memorize key points from books, and a Quote feature to save and revisit favorite passages. Built with Next.js and Supabase, it offers real-time data handling, user authentication, and a smooth, responsive experience.",
-      technologies: [
-        "Next.js",
-        "Supabase",
-      ],
+      technologies: ["Next.js", "Supabase"],
       links: [
         {
           type: "Website",
@@ -123,8 +148,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video:
-        "/project/wbook.mp4",
+      video: "/project/wbook.mp4",
     },
     {
       title: "Hiragana Learning App (Final Year Project)",
@@ -133,13 +157,7 @@ export const DATA = {
       active: true,
       description:
         "The project involves developing a Hiragana learning application that uses TensorFlow-based AI models for an interactive educational experience. It focuses on optimizing various architectures to achieve high accuracy in recognizing and teaching Hiragana characters, aiming to enhance the user’s learning through adaptive techniques.  ",
-      technologies: [
-        "Python",
-        "Flutter",
-        "Tensorflow",
-        "Node.js",
-        "Anaconda",
-      ],
+      technologies: ["Python", "Flutter", "Tensorflow", "Node.js", "Anaconda"],
       links: [
         {
           type: "Source",
@@ -153,8 +171,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video:
-        "/project/hiraganaApp.mp4",
+      video: "/project/hiraganaApp.mp4",
     },
     {
       title: "MosqueHub",
@@ -183,7 +200,7 @@ export const DATA = {
       ],
       image: "",
       video: "/project/mosquehub.mp4",
-    }
+    },
   ],
   hackathons: [
     {
@@ -218,8 +235,7 @@ export const DATA = {
       subject: "Project P2MW",
       description:
         "Designed the logo and user interface for the Adventure app, focusing on creating a modern, adventurous brand identity and an intuitive UI. The design aimed to enhance user experience with easy navigation and visually engaging elements.",
-      image:
-        "https://vrtour.my.id/img/logo/logo.png",
+      image: "https://vrtour.my.id/img/logo/logo.png",
       links: [
         {
           title: "Site",
@@ -279,6 +295,6 @@ export const DATA = {
           href: "https://github.com/fangbim/GnG-Sneakers",
         },
       ],
-    }
+    },
   ],
 } as const;
