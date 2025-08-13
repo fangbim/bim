@@ -169,6 +169,11 @@ export const DATA = {
           href: "https://github.com/fangbim/kosakata-hiragana-api",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Paper",
+          href: "https://repository.uisi.ac.id/6650/",
+          icon: <Icons.paper className="size-3" />,
+        },
       ],
       image: "",
       video: "/project/hiraganaApp.mp4",

@@ -1,3 +1,4 @@
+"use client"
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -6,10 +7,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { useState } from "react";
 
 interface Props {
   title: string;
@@ -40,6 +48,13 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const MAX_LENGTH = 120;
+  const shouldTruncate = description.length > MAX_LENGTH;
+  const displayDescription = shouldTruncate && !isExpanded 
+    ? description.slice(0, MAX_LENGTH) + "..."
+    : description;
+
   return (
     <Card
       className={
@@ -72,14 +87,39 @@ export function ProjectCard({
       </Link>
       <CardHeader className="px-2">
         <div className="space-y-1">
-          <CardTitle className="mt-1 text-base">{title}</CardTitle>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <CardTitle className="mt-1 text-base truncate cursor-default">
+                  {title}
+                </CardTitle>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="max-w-xs">{title}</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
           <time className="font-sans text-xs">{dates}</time>
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
-          <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-            {description}
-          </Markdown>
+          <div className="space-y-1">
+            <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+              {displayDescription}
+            </Markdown>
+            {shouldTruncate && (
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setIsExpanded(!isExpanded);
+                }}
+                className="text-xs text-black hover:text-gray-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors duration-200"
+              >
+                {isExpanded ? "Show less" : "Read more"}
+              </button>
+            )}
+          </div>
         </div>
       </CardHeader>
       <CardContent className="mt-auto flex flex-col px-2">
