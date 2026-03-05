@@ -19,6 +19,10 @@ export async function generateMetadata({
 }): Promise<Metadata | undefined> {
   let post = await getPost(params.slug);
 
+  if (!post) {
+    return;
+  }
+
   let {
     title,
     publishedAt: publishedTime,
@@ -61,7 +65,7 @@ export default async function Blog({
   let post = await getPost(params.slug);
 
   if (!post) {
-    notFound();
+    return notFound();
   }
 
   return (

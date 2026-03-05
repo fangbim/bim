@@ -86,6 +86,18 @@ export const DATA = {
 
   work: [
     {
+      company: "PT. Sarana Karya Solusindo",
+      href: "https://atomic.finance",
+      badges: [],
+      location: "Sidoarjo",
+      title: "IT Developer",
+      logoUrl: "/bandell.png",
+      start: "Sept 2025",
+      end: "Present",
+      description:
+        "Working as an IT Developer responsible for developing and maintaining internal systems to support operational workflows, including web and mobile applications for Smart Lighting (PJU) monitoring. Contributing to backend API development, server maintenance, and system performance monitoring while also supporting IoT device integration, RTU configuration, commissioning, and troubleshooting. Actively involved in SIM management systems, communication protocol analysis using Wireshark, and ensuring reliable system deployment for field operations.",
+    },
+    {
       company: "Dana Pensiun Semen Gresik",
       href: "https://atomic.finance",
       badges: [],
@@ -109,6 +121,43 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "PJU Pintar Mobile App",
+      href: "https://github.com/fangbim/pju-pintar",
+      dates: "Sept 2025 - Present",
+      active: true,
+      description:
+        "PJU Pintar is a mobile application designed to monitor and manage street lighting systems. It provides real-time data on energy consumption, operational status, and maintenance schedules. The app allows users to report issues, track repairs, and optimize energy usage for improved efficiency and sustainability.",
+      technologies: ["Flutter", "MySQL", "Laravel API", "Firebase"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/fangbim/pju-pintar",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/project/pjupintar.png",
+      video: "",
+    },
+    {
+      title: "POTAS - Portal Satu Pintu BANDELL",
+      href: "https://github.com/fangbim/potas",
+      dates: "Sept 2025 - Present",
+      active: true,
+      description:
+        "POTAS is a web-based application that serves as a single portal for managing various administrative tasks within BANDELL. It streamlines processes such as employee management, document handling, and workflow automation, improving overall operational efficiency and user experience.",
+
+      technologies: ["Laravel", "MySQL", "TailwindCSS", "DaisyUI"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/fangbim/potas",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/project/potas.png",
+      video: "",
+    },
     {
       title: "Auto Invoice",
       href: "https://github.com/fangbim/autoinvoice",

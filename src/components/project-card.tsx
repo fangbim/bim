@@ -14,6 +14,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -56,6 +57,11 @@ export function ProjectCard({
     : description;
 
   return (
+    <motion.div
+      whileHover={{ y: -4, scale: 1.01 }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
+      className="h-full"
+    >
     <Card
       className={
         "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
@@ -152,5 +158,6 @@ export function ProjectCard({
         )}
       </CardFooter>
     </Card>
+    </motion.div>
   );
 }
