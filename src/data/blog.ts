@@ -65,7 +65,7 @@ async function getAllPosts(dir: string) {
       };
     })
   );
-  return posts.filter((post) => post !== null);
+  return posts.filter((post): post is NonNullable<typeof post> => post !== null);
 }
 
 export async function getBlogPosts() {
